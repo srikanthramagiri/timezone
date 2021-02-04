@@ -45,17 +45,21 @@ const useStyles = makeStyles((theme) => ({
         borderRight: '2px solid #767676'
     },
     reqHeader: {
-        fontSize: '11px'
+        fontSize: '11px',
+        color: 'darkgray'
        
     },
     Requestdiv: {
-        color: 'darkgray',
+       
         marginTop:'20px',
        
 
     },
     requestCol: {
         borderLeft: '1px solid #767676'
+    },
+    warning: {
+        fontSize: '15px'
     }
 }));
 export default function Card() {
@@ -86,7 +90,7 @@ export default function Card() {
                 {/* <Grid container lg={1} md={1} sm={12}><PrintIcon /></Grid>
                 <Grid container lg={2} md={2} sm={12}> <Button>Reject</Button></Grid>
                 <Grid container lg={2} md={2} sm={12}><Button>Authorise</Button></Grid> */}
-                <Grid container className={classes.Requestdiv} lg={12} md={12} sm={12}>
+                <Grid container className={classes.Requestdiv} lg={12} md={12} sm={12} alignContent="center" alignItems="center">
                     <Grid className= {classes.requestCol} item lg={2} md={12} sm={12}>
                         <Typography className={classes.reqHeader}>Requst reference</Typography>
                         <Typography variant="caption">SET1234567CH</Typography>
@@ -98,7 +102,7 @@ export default function Card() {
                     <Grid className= {classes.requestCol} item lg={2} md={12} sm={12}>
                         <Typography  className={classes.reqHeader}>Request status</Typography>
 
-                        <Typography variant="caption"><WarningIcon />Pendin authorization</Typography>
+                        <Typography variant="caption"><WarningIcon className={classes.warning} />Pendin authorization</Typography>
                     </Grid>
                     <Grid item lg={4} md={12} sm={12}></Grid>
                     <Grid item lg={2} md={12} sm={12}>
