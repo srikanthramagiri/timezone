@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react'
 import { Select, MenuItem, FormControl, InputLabel } from '@material-ui/core'
-import axios from "axios"
 import { getCountries, getTimeStamp } from "../service/services"
 
 function CountryDropwDown() {
