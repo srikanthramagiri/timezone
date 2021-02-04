@@ -1,12 +1,12 @@
 import logo from './logo.svg';
 import './App.css';
-import CountryDropwDown from "./components/countryDropdown"
+import Main from "./components/main"
 
 function App() {
   return (
     <div className="App">
-      <h1>Time Zone</h1>
-    <CountryDropwDown />
+     
+    <Main />
    
     </div>
   );
