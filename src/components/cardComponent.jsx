@@ -62,7 +62,7 @@ export default function Card() {
             <Grid item lg={4}>
 
             </Grid>
-            <Grid className={classes.cardmain} container item lg={8} md={6} sm={12} xs={12} alignContent="center" alignItems="center" >
+            <Grid className={classes.cardmain} container item lg={8} md={12} sm={12} xs={12} alignContent="center" alignItems="center" >
                 <Grid container className={classes.cancelSection} item lg={8} md={6} sm={12} >
                     <Grid lg={12} md={12} sm={12} >
                         <Typography variant="h6">Cancel / recall payment, GBP 1,000.00</Typography>
@@ -73,7 +73,7 @@ export default function Card() {
 
 
                 </Grid>
-                <Grid container lg={4} md={4} sm={12} justify="flex-end">
+                <Grid container lg={4} md={12} sm={12} justify="flex-end">
                     <PictureAsPdfIcon className={classes.pdf} />
                     <PrintIcon className={classes.print} />
                     <Button className={classes.reject}>Reject</Button>
