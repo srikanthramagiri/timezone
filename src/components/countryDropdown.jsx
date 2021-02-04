@@ -42,7 +42,7 @@ function CountryDropwDown() {
     useEffect(() => {
         getCountries().then((res) => { setCountries(res.data.zones) })
             .catch((e) => { console.log(e) });
-        () => {
+        return () => {
             clearInterval(intervalId)
         }
     }, [])
