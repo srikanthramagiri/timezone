@@ -1,23 +1,13 @@
 import logo from './logo.svg';
 import './App.css';
+import CountryDropwDown from "./components/countryDropdown"
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-linkk"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>Time Zone</h1>
+    <CountryDropwDown />
+   
     </div>
   );
 }
